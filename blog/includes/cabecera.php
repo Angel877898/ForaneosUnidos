@@ -13,7 +13,7 @@
 			<!-- LOGO -->
 			<div id="logo">
 				<a href="index.php">
-					Blog de Videojuegos
+					Blog recetario de cocina
 				</a>
 			</div>
 			
@@ -36,10 +36,11 @@
 						endif;
 					?>
 					<li>
-						<a href="index.php">Sobre mí</a>
+						<a href="sobreNosotros.php">Sobre nosotros</a>
 					</li>
+					
 					<li>
-						<a href="index.php">Contacto</a>
+						<a href="index.php"><b>Pagina Principal</b></a>
 					</li>
 				</ul>
 			</nav>
