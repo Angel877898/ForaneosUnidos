@@ -4,7 +4,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<title>Blog de Videojuegos</title>
+		<title>Blog recetario de cocina</title>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 	</head>
 	<body>
@@ -16,6 +16,9 @@
 					Blog recetario de cocina
 				</a>
 			</div>
+			<div id="icono">
+            	<img src="./assets/img/ForaneosUnidosS.png" alt="">
+        	</div>
 			
 			<!-- MENU -->
 			<nav id="menu">
@@ -40,7 +43,7 @@
 					</li>
 					
 					<li>
-						<a href="index.php"><b>Pagina Principal</b></a>
+						<a href="../main/html"><b>Foraneos Unidos</b></a>
 					</li>
 				</ul>
 			</nav>
