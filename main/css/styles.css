@@ -98,7 +98,7 @@ body{
     margin-bottom: 30px;
 }
 #principal{
-    float: left;
+    
     width: 95%;
     min-height: 572px;
     background:white;
@@ -106,12 +106,154 @@ body{
     box-shadow: 0px 0px 5px #ccc;
     margin-left: 20px;
     padding: 20px;
-    overflow: hidden;
+    
 }
-
-
-
-
+#inicio h1{
+    font-family: "fajala", Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-align: center;
+    margin-top: 5px;
+}
+#inicio p{
+    font-family: "fajala", Helvetica;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 10px;
+}
+#imenu{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#separador{
+    margin-bottom:20px ;
+    
+}
+.destination-box {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  .destination-box p{
+      margin-left: 23%;
+  }
+  .destination-box .box-cover {
+    line-height: 1em;
+    font-size: 0;
+  }
+  .destination-box img {
+    backface-visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-transform: scale(1.045);
+    -ms-transform: scale(1.045);
+    transform: scale(1.045);
+    width: 20%;
+    height: 20%;
+    
+  }
+  .destination-box .boats-qty {
+    pointer-events: none;
+    position: absolute;
+    border-radius: 5px;
+    background: #e7434e;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    left: 30px;
+    top: 30px;
+  }
+  .destination-box .boats-qty::before {
+    content: "";
+    font-family: icomoon;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+    height: 40px;
+   
+  }
+  .destination-box .box-details {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    width: 16%;
+  }
+  .destination-box .box-details::before {
+    content: "";
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: -15px;
+    opacity: 0.65;
+    background: linear-gradient(to bottom, transparent, #000);
+  }
+  .destination-box .box-meta {
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    visibility: hidden;
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+  }
+  .destination-box .box-meta .city,
+  .destination-box .box-meta .country {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    line-height: 1em;
+    color: #ffffff;
+    margin: 0;
+  }
+  .destination-box .box-meta .city {
+    font-size: 30px;
+    margin: 0 0 7.5px;
+  }
+  .destination-box .box-meta .country {
+    font-size: 20px;
+  }
+  .destination-box:hover .box-details::before {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .destination-box:hover .box-meta {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .destination-box:hover img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 #pie{
     clear:both;
     width: 85%;
