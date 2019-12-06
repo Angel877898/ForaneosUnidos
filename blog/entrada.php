@@ -12,7 +12,7 @@
 		
 <!-- CAJA PRINCIPAL -->
 <div id="principal">
-
+	
 	<h1><?=$entrada_actual['titulo']?></h1>
 	
 	<a href="categoria.php?id=<?=$entrada_actual['categoria_id']?>">
@@ -26,7 +26,10 @@
 	<?php if(isset($_SESSION["usuario"]) && $_SESSION['usuario']['id'] == $entrada_actual['usuario_id']): ?>
 		<br/>	
 		<a href="editar-entrada.php?id=<?=$entrada_actual['id']?>" class="boton boton-verde">Editar entrada</a>
+		
 		<a href="borrar-entrada.php?id=<?=$entrada_actual['id']?>" class="boton">Eliminar entrada</a>
+		<br><br><br>
+		<input type="button" value="Imprime esta página" onclick="window.print()">
 	<?php endif; ?>
 	
 </div> <!--fin principal-->
