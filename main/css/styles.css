@@ -377,6 +377,54 @@ body{
     -ms-transform: scale(1);
     transform: scale(1);
   }
+  #map{
+    height: 100%;
+	  width: 100%;
+  }
+  #map2{
+    height: 100%;
+	  width: 100%;
+  }
+  #map3{
+    height: 100%;
+	  width: 100%;
+  }
+  #map4{
+    height: 100%;
+	  width: 100%;
+  }
+  #mapa{
+    position: absolute;
+    top: 112%;
+    left: 73%;
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+  }
+  #mapa2{
+    position: absolute;
+    top: 150%;
+    left: 73%;
+    width: 200px;
+    height: 200px;
+    z-index: 1100;
+  }
+  #mapa3{
+    position: absolute;
+    top: 192%;
+    left: 73%;
+    width: 200px;
+    height: 200px;
+    z-index: 1200;
+  }
+  #mapa4{
+    position: absolute;
+    top: 232%;
+    left: 73%;
+    width: 200px;
+    height: 200px;
+    z-index: 1300;
+  }
 .formulario{
   width: 500px;
   max-width: 100%;
