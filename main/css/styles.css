@@ -132,8 +132,48 @@ body{
 }
 #info-res{
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 5%;
+  letter-spacing: .5px;
+  font-family: "fajala", Helvetica;
+  font-style: italic;
+  font-size: 19px;
+  text-align: left;
+}
+#info-res2{
+  position: absolute;
+  top: 11%;
+  left: 22.5%;
+  letter-spacing: .5px;
+  font-family: "fajala", Helvetica;
+  font-style: italic;
+  font-size: 19px;
+  text-align: left;
+}
+#info-res3{
+  position: absolute;
+  top: 11%;
+  left: 29%;
+  letter-spacing: .5px;
+  font-family: "fajala", Helvetica;
+  font-style: italic;
+  font-size: 19px;
+  text-align: left;
+}
+#info-res4{
+  position: absolute;
+  top: 6%;
+  left: 2.5%;
+  letter-spacing: .5px;
+  font-family: "fajala", Helvetica;
+  font-style: italic;
+  font-size: 19px;
+  text-align: left;
+}
+#info-res1{
+  position: absolute;
+  top: 11%;
+  left: 25%;
   letter-spacing: .5px;
   font-family: "fajala", Helvetica;
   font-style: italic;
@@ -157,7 +197,7 @@ body{
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px #ccc;
   font-family: "fajala";
-  
+  text-align: center;
 }
 #nosotros p{
   font-family: "fajala";
@@ -348,6 +388,16 @@ body{
   padding: 10px 20px;
   cursor: pointer;
   border: none;
+  width: 25%;
+  position: relative;
+  top: -49px;
+  left: 36%;
+}
+#respuesta {
+  padding-left: 15px;
+  font-family: "fajala";
+  text-align: center;
+  font-size: 20px;
 }
 .fijar{
   margin-top: -135px;

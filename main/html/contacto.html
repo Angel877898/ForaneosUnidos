@@ -51,18 +51,41 @@
     </header>
     <div id="contenedor">
         <div id="principal">
-            <form action="" class="formulario">
+            <form action="" class="formulario" >
                 <h1 class="formulario_titulo">Contáctanos</h1>
                 <input type="text" class="formulario_input" id="nombre">
-                <label for="nombre" class="formulario_label">Nombre</label>
+                <label for="nombre" class="formulario_label"id="Nombre">Nombre</label>
                 <input type="text" class="formulario_input"id="correo">
-                <label for="correo" class="formulario_label">Correo</label>
+                <label for="correo" class="formulario_label"id="Correo">Correo</label>
                 <input type="text" class="formulario_input" id="mensaje">
-                <label for="mensaje" class="formulario_label">Mensaje</label>
-                <input type="submit"class="formulario_submit">
+                <label for="mensaje" class="formulario_label"id="Mensaje">Mensaje</label>
+                <!-- <input type="submit"class="formulario_submit"id="Enviar"onclick="enviar()"> -->
+                
             </form>
+            <button id="Enviar"class="formulario_submit">Enviar</button>
             <script src="form.js"></script>
-            
+            <div id="resp">
+                <p id="respuesta"></p>
+            </div>
+            <script>
+                
+            function ajax(){
+                const http=new XMLHttpRequest();
+                const url='http://localhost:9999/dw-2019/ProyectoFinal/ForaneosUnidos/main/html/form.html';
+                http.onreadystatechange=function(){
+                    if(this.readyState==4 && this.status==200){
+                        document.getElementById("respuesta").innerHTML=this.responseText
+                    }   
+                    
+                }
+                http.open("GET",url)
+                http.send()
+            }
+            document.getElementById("Enviar").addEventListener("click",function(){
+                ajax();
+            })
+                   
+            </script>
         </div>
         <div class="clearfix"></div>
     </div>
